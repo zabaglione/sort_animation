@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ソートアルゴリズムアニメーション</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>ソートアルゴリズムアニメーション</h1>
+    <canvas id="sortCanvas"></canvas>
+    <div id="info">
+        <p>要素数: <span id="elementCount">50</span></p>
+        <p>交換回数: <span id="swapCount">0</span></p>
+        <p>処理時間: <span id="elapsedTime">0</span> ms</p>
+    </div>
+    <button id="randomizeButton">ランダムに並べる</button>
+    <button id="startSortButton" disabled>ソート開始</button>
+    <button id="nextStepButton" disabled>次の処理</button>
+    <button id="pauseButton" disabled>一時停止</button>
+    <select id="sortAlgorithm">
+        <option value="bubbleSort">バブルソート</option>
+        <option value="selectionSort">選択ソート</option>
+        <option value="insertionSort">挿入ソート</option>
+        <option value="quickSort">クイックソート</option>
+        <option value="heapSort">ヒープソート</option>
+        <option value="mergeSort">マージソート</option>
+    </select>
+    <script src="sort_animation.js"></script>
+</body>
+
+</html>
