@@ -2,6 +2,8 @@
 
 Sort Animation is a web‑based visualization tool for demonstrating the behavior of common sorting algorithms. The application is implemented in vanilla JavaScript and HTML5 Canvas without external frameworks.
 
+**Live Demo:** https://zabaglione.github.io/sort_animation/
+
 ---
 
 ## Getting Started
