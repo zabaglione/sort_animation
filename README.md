@@ -12,7 +12,7 @@ Clone the repository and launch a local HTTP server:
 git clone https://github.com/zabaglione/sort_animation.git
 cd sort_animation
 python3 -m http.server 8000
-# Open http://localhost:8000/sort_animation.html in your browser
+# Open http://localhost:8000/index.html in your browser
 ```
 
 `sort_animation.html` can also be opened directly in a browser, but some browsers restrict local file access. Using a local server is therefore recommended.
