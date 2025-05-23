@@ -3,30 +3,38 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ソートアルゴリズムアニメーション</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
-    <h1>ソートアルゴリズムアニメーション</h1>
+    <h1><i class="fas fa-sort"></i> ソートアルゴリズムアニメーション</h1>
     <canvas id="sortCanvas"></canvas>
     <div id="info">
-        <p>要素数: <span id="elementCount">50</span></p>
-        <p>交換回数: <span id="swapCount">0</span></p>
-        <p>処理時間: <span id="elapsedTime">0</span> ms</p>
+        <p><i class="fas fa-list-ol"></i> 要素数: <span id="elementCount">50</span></p>
+        <p><i class="fas fa-exchange-alt"></i> 交換回数: <span id="swapCount">0</span></p>
+        <p><i class="fas fa-clock"></i> 処理時間: <span id="elapsedTime">0</span> ms</p>
     </div>
-    <button id="randomizeButton">ランダムに並べる</button>
-    <button id="startSortButton">ソート開始</button>
-    <button id="nextStepButton" disabled>次の処理</button>
-    <button id="pauseButton" disabled>一時停止</button>
-    <select id="sortAlgorithm">
-        <option value="bubbleSort">バブルソート</option>
-        <option value="selectionSort">選択ソート</option>
-        <option value="insertionSort">挿入ソート</option>
-        <option value="quickSort">クイックソート</option>
-        <option value="heapSort">ヒープソート</option>
-        <option value="mergeSort">マージソート</option>
-    </select>
+    <div class="controls">
+        <button id="randomizeButton"><i class="fas fa-random"></i> ランダムに並べる</button>
+        <button id="startSortButton"><i class="fas fa-play"></i> ソート開始</button>
+        <button id="nextStepButton" disabled><i class="fas fa-step-forward"></i> 次の処理</button>
+        <button id="pauseButton" disabled><i class="fas fa-pause"></i> 一時停止</button>
+        <select id="sortAlgorithm">
+            <option value="bubbleSort">バブルソート</option>
+            <option value="selectionSort">選択ソート</option>
+            <option value="insertionSort">挿入ソート</option>
+            <option value="quickSort">クイックソート</option>
+            <option value="heapSort">ヒープソート</option>
+            <option value="mergeSort">マージソート</option>
+        </select>
+    </div>
+    <div id="algorithmInfo" class="algorithm-info">
+        <h3>アルゴリズム情報</h3>
+        <p id="algorithmDescription">アルゴリズムを選択してください</p>
+    </div>
     <script src="sort_animation.js"></script>
 </body>
 
