@@ -35,7 +35,7 @@ python3 -m http.server 8000
 
 ```
 .
-├── sort_animation.html   # User interface
+├── index.html            # User interface
 ├── sort_animation.js     # Sorting algorithms and rendering logic
 └── README.md             # Project documentation
 ```
