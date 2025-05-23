@@ -23,11 +23,11 @@ python3 -m http.server 8000
 
 | Function                | Description                                                                                   |
 | ----------------------- | --------------------------------------------------------------------------------------------- |
-| Algorithm selection     | Bubble, Selection, Insertion, Merge, Quick, and other sorting algorithms                      |
-| Animation speed control | Adjustable via slider during execution                                                        |
-| Step execution          | Execute the algorithm one step at a time, with forward and backward navigation                |
-| Variable array size     | Configure the number of elements to observe the scalability characteristics of each algorithm |
-| Statistics              | Real‑time display of comparison and swap counts                                               |
+| Algorithm selection     | Bubble, Selection, Insertion, Merge, Quick, and Heap sorting algorithms                      |
+| Animation controls      | Start, pause, and step-by-step execution                                                      |
+| Step execution          | Execute the algorithm one step at a time with forward navigation                              |
+| Fixed array size        | 50 elements for consistent visualization                                                       |
+| Statistics              | Real‑time display of swap counts and elapsed time                                             |
 
 ---
 
@@ -35,8 +35,10 @@ python3 -m http.server 8000
 
 ```
 .
+├── CLAUDE.md             # Project instructions for Claude Code
 ├── index.html            # User interface
 ├── sort_animation.js     # Sorting algorithms and rendering logic
+├── styles.css            # CSS styling
 └── README.md             # Project documentation
 ```
 
